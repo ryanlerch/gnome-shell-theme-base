@@ -1,0 +1,19 @@
+$variant: 'light';
+
+@import "gnome-shell-sass/_colors"; //use gtk colors
+@import "gnome-shell-sass/_drawing";
+@import "gnome-shell-sass/_common";
+
+#panel{
+  background-color: $bg_color;
+  box-shadow: 1px 1px 0px outset #999;
+  .panel-button {
+    color: $fg_color;
+   }
+
+   .panel-corner {
+     -panel-corner-radius: 0;
+     -panel-corner-background-color: transparent;
+     -panel-corner-border-color: transparent;
+   }
+}
